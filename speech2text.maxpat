@@ -9,16 +9,20 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 374.0, 115.0, 1000.0, 780.0 ],
+        "rect": [ 147.0, 100.0, 1000.0, 780.0 ],
         "boxes": [
             {
                 "box": {
-                    "id": "obj-19",
+                    "id": "obj-25",
                     "maxclass": "newobj",
                     "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 585.0, 760.0, 32.0, 22.0 ],
-                    "text": "print"
+                    "numoutlets": 5,
+                    "outlettype": [ "", "", "", "", "" ],
+                    "patching_rect": [ 162.0, 400.0, 104.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "legacyoutputorder": 0
+                    },
+                    "text": "regexp Cucumber"
                 }
             },
             {
@@ -28,8 +32,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 414.0, 652.0, 49.0, 22.0 ],
-                    "text": "say jaw"
+                    "patching_rect": [ 40.0, 493.0, 83.0, 22.0 ],
+                    "text": "say cucumber"
                 }
             },
             {
@@ -41,7 +45,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 398.0, 683.0, 105.0, 21.0 ],
+                    "patching_rect": [ 40.0, 524.0, 105.0, 21.0 ],
                     "text": "prepend /command"
                 }
             },
@@ -52,7 +56,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 379.0, 714.0, 66.0, 22.0 ],
+                    "patching_rect": [ 40.0, 555.0, 66.0, 22.0 ],
                     "text": "spat5.shell"
                 }
             },
@@ -64,18 +68,21 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 546.0, 701.0, 24.0, 24.0 ]
+                    "patching_rect": [ 40.0, 440.0, 24.0, 24.0 ]
                 }
             },
             {
                 "box": {
                     "id": "obj-10",
                     "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "" ],
-                    "patching_rect": [ 577.0, 648.0, 45.0, 22.0 ],
-                    "text": "sel jaw"
+                    "numinlets": 1,
+                    "numoutlets": 5,
+                    "outlettype": [ "", "", "", "", "" ],
+                    "patching_rect": [ 40.0, 400.0, 101.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "legacyoutputorder": 0
+                    },
+                    "text": "regexp cucumber"
                 }
             },
             {
@@ -85,20 +92,19 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 597.0, 583.0, 47.0, 22.0 ],
+                    "patching_rect": [ 40.0, 363.0, 47.0, 22.0 ],
                     "text": "zl iter 1"
                 }
             },
             {
                 "box": {
                     "id": "obj-8",
-                    "linecount": 5,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 641.0, 590.0, 50.0, 76.0 ],
-                    "text": "can and close it very slowly."
+                    "patching_rect": [ 121.0, 363.0, 113.0, 22.0 ],
+                    "text": "(tapping)"
                 }
             },
             {
@@ -108,7 +114,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 613.0, 520.0, 71.0, 22.0 ],
+                    "patching_rect": [ 40.0, 323.0, 71.0, 22.0 ],
                     "text": "fromsymbol"
                 }
             },
@@ -119,9 +125,9 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 195.0, 405.0, 585.0, 22.0 ],
-                    "presentation_linecount": 5,
-                    "text": "\"can and close it very slowly.\""
+                    "patching_rect": [ 86.0, 227.0, 585.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "(tapping)"
                 }
             },
             {
@@ -131,7 +137,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 394.0, 353.0, 122.0, 22.0 ],
+                    "patching_rect": [ 40.0, 148.0, 122.0, 22.0 ],
                     "text": "OSC-route /transcript"
                 }
             },
@@ -142,19 +148,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 394.0, 236.0, 97.0, 22.0 ],
+                    "patching_rect": [ 40.0, 31.0, 97.0, 22.0 ],
                     "text": "udpreceive 7400"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-2",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 414.0, 276.0, 586.0, 22.0 ],
-                    "text": "/transcript \"can and close it very slowly.\""
                 }
             }
         ],
@@ -162,15 +157,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
-                    "order": 1,
-                    "source": [ "obj-10", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-19", 0 ],
-                    "order": 0,
-                    "source": [ "obj-10", 0 ]
+                    "source": [ "obj-10", 2 ]
                 }
             },
             {
@@ -193,15 +180,13 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-2", 1 ],
-                    "order": 0,
-                    "source": [ "obj-3", 0 ]
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-25", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "order": 1,
                     "source": [ "obj-3", 0 ]
                 }
             },
@@ -236,6 +221,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-10", 0 ],
+                    "order": 1,
+                    "source": [ "obj-9", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "order": 0,
                     "source": [ "obj-9", 0 ]
                 }
             }
